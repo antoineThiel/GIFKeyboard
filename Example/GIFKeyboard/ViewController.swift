@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import GIFKeyboard
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIFKeyboard.run()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
