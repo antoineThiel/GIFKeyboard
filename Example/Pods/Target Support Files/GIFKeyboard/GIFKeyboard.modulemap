@@ -1,0 +1,6 @@
+framework module GIFKeyboard {
+  umbrella header "GIFKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GIFKeyboard'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of GIFKeyboard.'
+  s.version          = '1.0.0'
+  s.summary          = 'description of GIFKeyboard.'
+  s.swift_version    = '4.1'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +19,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Allow user to have a GIFKeyboard
                        DESC
 
-  s.homepage         = 'https://github.com/48285858/GIFKeyboard'
+  s.homepage         = 'https://github.com/antoineThiel/GIFKeyboard'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '48285858' => 'antoine.thiel@hotmail.fr' }
-  s.source           = { :git => 'https://github.com/48285858/GIFKeyboard.git', :tag => s.version.to_s }
+  s.author           = { 'Antoine THIEL' => 'antoine.thiel@hotmail.fr' }
+  s.source           = { :git => 'https://github.com/antoineThiel/GIFKeyboard.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'

@@ -1,0 +1,6 @@
+framework module Pods_GIFKeyboard_Tests {
+  umbrella header "Pods-GIFKeyboard_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

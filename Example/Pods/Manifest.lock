@@ -1,0 +1,16 @@
+PODS:
+  - GIFKeyboard (0.1.0)
+
+DEPENDENCIES:
+  - GIFKeyboard (from `../`)
+
+EXTERNAL SOURCES:
+  GIFKeyboard:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GIFKeyboard: a1b2591450980aa0e2b101b55d7527b471bfafdb
+
+PODFILE CHECKSUM: 707c2a79cd1f57df93ce59e515af55fa342f16d2
+
+COCOAPODS: 1.11.2
