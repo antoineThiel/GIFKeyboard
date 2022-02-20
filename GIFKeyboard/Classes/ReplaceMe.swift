@@ -1,13 +1,15 @@
 let apikey = "TU3LOF1ELBH6"
+private var dataTask: URLSessionDataTask?
+var arrayResponse: [Response] = []
+
 
 
     public func run(){
-        requestData()
+        getGifBySearchTerm(searchTerm: "excited")
+
     }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
-    requestData()
 
     return true
   }
@@ -15,53 +17,69 @@ let apikey = "TU3LOF1ELBH6"
   /**
    Execute web request to retrieve the top GIFs returned(in batches of 8) for the given search term.
    */
-  func requestData()
-  {
-    // the test search term
-    let searchTerm = "excited"
+
+func getGifBySearchTerm(searchTerm: String){
 
     // Define the results upper limit
-    let limit = 8
-
-    // make initial search request for the first 8 items using default locale of EN_US
-    let searchRequest = URLRequest(url: URL(string: String(format: "https://g.tenor.com/v1/search?q=%@&key=%@&limit=%d",
+    let limit = 4
+      
+    let media_filter = "tinygif"
+    let searchRequest = URLRequest(url: URL(string: String(format: "https://g.tenor.com/v1/search?q=%@&key=%@&limit=%d&&media_filter=tinygif",
                                                              searchTerm,
                                                              apikey,
-                                                             limit))!)
-
-    makeWebRequest(urlRequest: searchRequest, callback: tenorSearchHandler)
-
-    // Data will be loaded by each request's callback
-  }
+                                                             limit,
+                                                            media_filter))!)
+    searchGif(urlRequest:searchRequest) {  (results) in
+        switch results{
+        case .success(let responseData):
+            let array = responseData.arrayReponseData
+            for media in array {
+                arrayResponse.append(media)
+                print(media,separator: "\n\n")
+            }
+            break
+        case .failure(let e):
+            print(e)
+            break
+        }
+    }
+}
 
   /**
    Async URL requesting function.
    */
-  func makeWebRequest(urlRequest: URLRequest, callback: @escaping ([String:AnyObject]) -> ())
-  {
-    // Make the async request and pass the resulting json object to the callback
-    let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-      do {
-        if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:AnyObject] {
-          // Push the results to our callback
-          callback(jsonResult)
+
+func searchGif(urlRequest: URLRequest,completion: @escaping(Result<ResponseData,Error>) -> Void) {
+    
+    dataTask = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+        
+        if let error = error {
+            completion(.failure(error))
+            print("DataTask: error: \(error.localizedDescription)")
+            return
         }
-      } catch let error as NSError {
-        print(error.localizedDescription)
-      }
+        
+        guard let response = response as? HTTPURLResponse else {
+            print("Empty Response")
+            return
+        }
+        print("Response status code: \(response.statusCode)")
+        
+        guard let data = data else{
+            print("Empty Data")
+            return
+        }
+        
+        do{
+            let decoder = JSONDecoder()
+            let jsonData = try decoder.decode(ResponseData.self, from: data)
+            DispatchQueue.main.async {
+                completion(.success(jsonData))
+            }
+        } catch let error {
+            completion(.failure(error))
+        }
+        
     }
-    task.resume()
-  }
-
-  /**
-   Web response handler for search requests.
-   */
-  func tenorSearchHandler(response: [String:AnyObject])
-  {
-    // Parse the json response
-    let responseGifs = response["results"]!
-
-    // Load the GIFs into your view
-    print("Result GIFS: \(responseGifs)")
-
-  }
+    dataTask?.resume()
+}

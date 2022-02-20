@@ -15,6 +15,9 @@
 		5D10F02B93FF36FDE3CF1A6E52C49FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		846C1944D3F88149FC2A0A2EA52F6097 /* Pods-GIFKeyboard_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04458281FCBFCD26E5EE1025A53D6C8E /* Pods-GIFKeyboard_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C91C7AE4A781FB72B716932FE61218D8 /* Pods-GIFKeyboard_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4BC258F936E8D11788810086D68137 /* Pods-GIFKeyboard_Example-dummy.m */; };
+		D3F3318C27C1EC2E004E9D7D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F3318B27C1EC2E004E9D7D /* Response.swift */; };
+		D3F3318E27C1F277004E9D7D /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F3318D27C1F277004E9D7D /* Media.swift */; };
+		D3F3319027C1F324004E9D7D /* TinyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F3318F27C1F324004E9D7D /* TinyGif.swift */; };
 		DC6091B30DA930AE97439DE4B7560846 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4D9282CE6F26A411F70B510F65B27 /* ReplaceMe.swift */; };
 		EF52C95FD0B483C8A6C75C0DCCD94713 /* GIFKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF9672A10C651B87B1152E4119A6C4 /* GIFKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -52,24 +55,27 @@
 		4F5EF073CCEF20668867E58854AF3464 /* Pods-GIFKeyboard_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFKeyboard_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		550CAC9AC17B5DB0A80FB7F30AE5F1D5 /* Pods-GIFKeyboard_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFKeyboard_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		644F7AB253887047B6016FCC54CEAEFE /* GIFKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GIFKeyboard.debug.xcconfig; sourceTree = "<group>"; };
-		658570CBB5330E89014C162EEF2C322D /* GIFKeyboard.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GIFKeyboard.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		658570CBB5330E89014C162EEF2C322D /* GIFKeyboard.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GIFKeyboard.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		714D876C0C84E3CC79EDA5BED1FC5948 /* Pods-GIFKeyboard_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFKeyboard_Example.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		750FD7F15212724A491DE9AAF56CB700 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		750FD7F15212724A491DE9AAF56CB700 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7D3486B9240AA2D5700119BAE7E6D45A /* Pods-GIFKeyboard_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFKeyboard_Tests-Info.plist"; sourceTree = "<group>"; };
 		89B7C88D77FD0B5B4A242C7780B996C4 /* GIFKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFKeyboard-prefix.pch"; sourceTree = "<group>"; };
 		93784D5259D92C0E28244796A483F27D /* Pods-GIFKeyboard_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFKeyboard_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9A54ED149FC33BE8C4888675EC556FC7 /* Pods-GIFKeyboard_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GIFKeyboard_Example.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FE6F4A140CD57C1225FA391E8F1839D /* GIFKeyboard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GIFKeyboard; path = GIFKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00CAE9DF6D200E21C0BA185C5BF1FE9 /* GIFKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GIFKeyboard-dummy.m"; sourceTree = "<group>"; };
 		A1DF9672A10C651B87B1152E4119A6C4 /* GIFKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFKeyboard-umbrella.h"; sourceTree = "<group>"; };
 		AE4BC258F936E8D11788810086D68137 /* Pods-GIFKeyboard_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFKeyboard_Example-dummy.m"; sourceTree = "<group>"; };
 		B4BC0FFB533D797139AC7F1690DF0C3B /* Pods-GIFKeyboard_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GIFKeyboard_Example"; path = Pods_GIFKeyboard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDB90EA441CD16F46348D16CBF1FF7E /* Pods-GIFKeyboard_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFKeyboard_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D3F3318B27C1EC2E004E9D7D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		D3F3318D27C1F277004E9D7D /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		D3F3318F27C1F324004E9D7D /* TinyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyGif.swift; sourceTree = "<group>"; };
 		DF2D1F3823A6119B84709F3CE0F9B54B /* Pods-GIFKeyboard_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFKeyboard_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E48B1E91020C057A1682F115D7C7BBC9 /* Pods-GIFKeyboard_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFKeyboard_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F4D6D59F1A2C4E09C677692D3ED8C57E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F4D6D59F1A2C4E09C677692D3ED8C57E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		050679B6C69A615426F7D2AC84CE761F /* GIFKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				D3F3318827C13B06004E9D7D /* Models */,
 				48E4D9282CE6F26A411F70B510F65B27 /* ReplaceMe.swift */,
 				82CBAFF693B880201D4B13243DB03C75 /* Pod */,
 				7CB5213664D8C08486C18A13B5E9EBB6 /* Support Files */,
@@ -195,6 +202,16 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3F3318827C13B06004E9D7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3F3318B27C1EC2E004E9D7D /* Response.swift */,
+				D3F3318D27C1F277004E9D7D /* Media.swift */,
+				D3F3318F27C1F324004E9D7D /* TinyGif.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F2B741F507C29E888AA1B854BABBA2FC /* Pods-GIFKeyboard_Tests */ = {
@@ -384,6 +401,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFAFD248BA4CB58846F29C36672FD79 /* GIFKeyboard-dummy.m in Sources */,
+				D3F3318C27C1EC2E004E9D7D /* Response.swift in Sources */,
+				D3F3319027C1F324004E9D7D /* TinyGif.swift in Sources */,
+				D3F3318E27C1F277004E9D7D /* Media.swift in Sources */,
 				DC6091B30DA930AE97439DE4B7560846 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,8 +705,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
