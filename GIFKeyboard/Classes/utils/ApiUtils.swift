@@ -14,16 +14,19 @@ class ApiUtils {
     var arrayResponse: [Response] = []
     
     public func getGifBySearchTerm(searchTerm: String, completion: @escaping (Error?, [Response]?) -> Void){
-        let limit = 5
+        let originalString = searchTerm
+        let finalSearchTerm = originalString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        let limit = 10
         let media_filter = "tinygif"
         let searchRequest = URLRequest(
-            url: URL(string: String(format: "https://g.tenor.com/v1/search?q=%@&key=%@&limit=%d&&media_filter=tinygif", searchTerm, apikey, limit, media_filter))!
+            url: URL(string: String(format: "https://g.tenor.com/v1/search?q=%@&key=%@&limit=%d&&media_filter=tinygif", finalSearchTerm!, apikey, limit, media_filter))!
         )
         
         searchGif(urlRequest:searchRequest) { (results) in
             switch results{
                 case .success(let responseData):
                 let array = responseData.arrayReponseData
+                self.arrayResponse.removeAll()
                     for media in array {
                         self.arrayResponse.append(media)
                         }

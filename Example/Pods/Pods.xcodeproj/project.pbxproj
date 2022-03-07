@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		02E9184C4AFFB21A0C41885EB4DD577E /* GIFKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GIFKeyboard.release.xcconfig; sourceTree = "<group>"; };
 		04458281FCBFCD26E5EE1025A53D6C8E /* Pods-GIFKeyboard_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GIFKeyboard_Example-umbrella.h"; sourceTree = "<group>"; };
-		0B564B0207A18C477F1C0A003DD98429 /* Pods-GIFKeyboard_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GIFKeyboard_Tests"; path = Pods_GIFKeyboard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B564B0207A18C477F1C0A003DD98429 /* Pods_GIFKeyboard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFKeyboard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1048BABC0946BD97DE92F03CA98989DE /* Pods-GIFKeyboard_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFKeyboard_Example-Info.plist"; sourceTree = "<group>"; };
 		1520FD278F86C134B77D971F40A6B33B /* Pods-GIFKeyboard_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFKeyboard_Tests-dummy.m"; sourceTree = "<group>"; };
 		1C78B879E5E21A5310ABD7DEFB07431B /* GIFKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GIFKeyboard.modulemap; sourceTree = "<group>"; };
@@ -63,20 +63,20 @@
 		714D876C0C84E3CC79EDA5BED1FC5948 /* Pods-GIFKeyboard_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GIFKeyboard_Example.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		750FD7F15212724A491DE9AAF56CB700 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		7A14347C27D3AFD000A2D09E /* GifReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifReader.swift; sourceTree = "<group>"; };
-		7A14347F27D3B77200A2D09E /* ErrorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUtils.swift; sourceTree = "<group>"; };
-		7A14348527D3EC4800A2D09E /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		7A14347C27D3AFD000A2D09E /* GifReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GifReader.swift; path = GIFKeyboard/Classes/GifReader.swift; sourceTree = "<group>"; };
+		7A14347F27D3B77200A2D09E /* ErrorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorUtils.swift; path = /Users/antoinethiel/Documents/Ios/GIFKeyboard/GIFKeyboard/Classes/utils/ErrorUtils.swift; sourceTree = "<absolute>"; };
+		7A14348527D3EC4800A2D09E /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Modal.swift; path = GIFKeyboard/Classes/Modal.swift; sourceTree = "<group>"; };
 		7A14348727D3FC1400A2D09E /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		7D3486B9240AA2D5700119BAE7E6D45A /* Pods-GIFKeyboard_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GIFKeyboard_Tests-Info.plist"; sourceTree = "<group>"; };
 		89B7C88D77FD0B5B4A242C7780B996C4 /* GIFKeyboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFKeyboard-prefix.pch"; sourceTree = "<group>"; };
 		93784D5259D92C0E28244796A483F27D /* Pods-GIFKeyboard_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GIFKeyboard_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9A54ED149FC33BE8C4888675EC556FC7 /* Pods-GIFKeyboard_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GIFKeyboard_Example.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FE6F4A140CD57C1225FA391E8F1839D /* GIFKeyboard */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GIFKeyboard; path = GIFKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE6F4A140CD57C1225FA391E8F1839D /* GIFKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GIFKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00CAE9DF6D200E21C0BA185C5BF1FE9 /* GIFKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GIFKeyboard-dummy.m"; sourceTree = "<group>"; };
 		A1DF9672A10C651B87B1152E4119A6C4 /* GIFKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GIFKeyboard-umbrella.h"; sourceTree = "<group>"; };
 		AE4BC258F936E8D11788810086D68137 /* Pods-GIFKeyboard_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GIFKeyboard_Example-dummy.m"; sourceTree = "<group>"; };
-		B4BC0FFB533D797139AC7F1690DF0C3B /* Pods-GIFKeyboard_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GIFKeyboard_Example"; path = Pods_GIFKeyboard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BC0FFB533D797139AC7F1690DF0C3B /* Pods_GIFKeyboard_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFKeyboard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDB90EA441CD16F46348D16CBF1FF7E /* Pods-GIFKeyboard_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GIFKeyboard_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D3F3318B27C1EC2E004E9D7D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		D3F3318D27C1F277004E9D7D /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
@@ -120,9 +120,10 @@
 				7A14347E27D3B76600A2D09E /* utils */,
 				D3F3318827C13B06004E9D7D /* Models */,
 				48E4D9282CE6F26A411F70B510F65B27 /* Main.swift */,
+				7A14348527D3EC4800A2D09E /* Modal.swift */,
+				7A14347C27D3AFD000A2D09E /* GifReader.swift */,
 				82CBAFF693B880201D4B13243DB03C75 /* Pod */,
 				7CB5213664D8C08486C18A13B5E9EBB6 /* Support Files */,
-				7A14347C27D3AFD000A2D09E /* GifReader.swift */,
 			);
 			name = GIFKeyboard;
 			path = ../..;
@@ -142,7 +143,8 @@
 				7A14347F27D3B77200A2D09E /* ErrorUtils.swift */,
 				7A14348727D3FC1400A2D09E /* ApiUtils.swift */,
 			);
-			path = utils;
+			name = utils;
+			path = GIFKeyboard/Classes/utils;
 			sourceTree = "<group>";
 		};
 		7CB5213664D8C08486C18A13B5E9EBB6 /* Support Files */ = {
@@ -229,9 +231,9 @@
 				D3F3318B27C1EC2E004E9D7D /* Response.swift */,
 				D3F3318D27C1F277004E9D7D /* Media.swift */,
 				D3F3318F27C1F324004E9D7D /* TinyGif.swift */,
-				7A14348527D3EC4800A2D09E /* Modal.swift */,
 			);
-			path = Models;
+			name = Models;
+			path = GIFKeyboard/Classes/Models;
 			sourceTree = "<group>";
 		};
 		F2B741F507C29E888AA1B854BABBA2FC /* Pods-GIFKeyboard_Tests */ = {
@@ -253,9 +255,9 @@
 		F9EBC98DFF0A67399FB929E9FA1AB6D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FE6F4A140CD57C1225FA391E8F1839D /* GIFKeyboard */,
-				B4BC0FFB533D797139AC7F1690DF0C3B /* Pods-GIFKeyboard_Example */,
-				0B564B0207A18C477F1C0A003DD98429 /* Pods-GIFKeyboard_Tests */,
+				9FE6F4A140CD57C1225FA391E8F1839D /* GIFKeyboard.framework */,
+				B4BC0FFB533D797139AC7F1690DF0C3B /* Pods_GIFKeyboard_Example.framework */,
+				0B564B0207A18C477F1C0A003DD98429 /* Pods_GIFKeyboard_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -306,7 +308,7 @@
 			);
 			name = "Pods-GIFKeyboard_Tests";
 			productName = Pods_GIFKeyboard_Tests;
-			productReference = 0B564B0207A18C477F1C0A003DD98429 /* Pods-GIFKeyboard_Tests */;
+			productReference = 0B564B0207A18C477F1C0A003DD98429 /* Pods_GIFKeyboard_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C19634E676C9800F856025EFBE3A5F88 /* Pods-GIFKeyboard_Example */ = {
@@ -325,7 +327,7 @@
 			);
 			name = "Pods-GIFKeyboard_Example";
 			productName = Pods_GIFKeyboard_Example;
-			productReference = B4BC0FFB533D797139AC7F1690DF0C3B /* Pods-GIFKeyboard_Example */;
+			productReference = B4BC0FFB533D797139AC7F1690DF0C3B /* Pods_GIFKeyboard_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CB3EC5E23E37D822FC66762546740BC7 /* GIFKeyboard */ = {
@@ -343,7 +345,7 @@
 			);
 			name = GIFKeyboard;
 			productName = GIFKeyboard;
-			productReference = 9FE6F4A140CD57C1225FA391E8F1839D /* GIFKeyboard */;
+			productReference = 9FE6F4A140CD57C1225FA391E8F1839D /* GIFKeyboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -353,7 +355,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -465,7 +467,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GIFKeyboard_Tests/Pods-GIFKeyboard_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GIFKeyboard_Tests/Pods-GIFKeyboard_Tests.modulemap";
@@ -498,7 +500,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GIFKeyboard/GIFKeyboard-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GIFKeyboard/GIFKeyboard-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GIFKeyboard/GIFKeyboard.modulemap";
 				PRODUCT_MODULE_NAME = GIFKeyboard;
@@ -566,7 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -594,7 +596,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GIFKeyboard/GIFKeyboard-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GIFKeyboard/GIFKeyboard-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GIFKeyboard/GIFKeyboard.modulemap";
 				PRODUCT_MODULE_NAME = GIFKeyboard;
@@ -625,7 +627,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GIFKeyboard_Tests/Pods-GIFKeyboard_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GIFKeyboard_Tests/Pods-GIFKeyboard_Tests.modulemap";
@@ -657,7 +659,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GIFKeyboard_Example/Pods-GIFKeyboard_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GIFKeyboard_Example/Pods-GIFKeyboard_Example.modulemap";
@@ -724,7 +726,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -750,7 +752,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GIFKeyboard_Example/Pods-GIFKeyboard_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GIFKeyboard_Example/Pods-GIFKeyboard_Example.modulemap";

@@ -1,17 +1,22 @@
-public func start(view:UIView) {
-    let controller:GIFModal = GIFModal()
-    view.addSubview(controller.view)
+public class GIFKeyboard{
+    
+    public init() {
+        
+    }
+    
+    public func getGIFModalDefault(view:UIView) -> UIViewController {
+        return GIFModal.newInstanceDefault(customView: view)
+    }
+
+    public func getGIFModalCustom(view:UIView, searchBar:UITextField, collection:UICollectionView, layout:UICollectionViewFlowLayout) -> UIViewController {
+        return GIFModal.newInstanceCustom(customView: view, searchBar: searchBar, collectionView: collection, collectionViewLayout: layout)
+    }
+
+    public func displayGIFFromURL(viewToAppendTo:UIView, url:String) -> Void {
+        let imageURL = UIImage.gifImageWithURL(url)
+        let imageView = UIImageView(image: imageURL)
+        imageView.frame = CGRect(x: 0, y: 0, width: viewToAppendTo.frame.width, height: viewToAppendTo.frame.height)
+        viewToAppendTo.addSubview(imageView)
+    }
+
 }
-
-public func getGIFModal() -> UIViewController {
-    let modal:GIFModal = GIFModal()
-    return modal
-}
-
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        return true
-}
-
-
-
-
