@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GIFKeyboard'
-  s.version          = '1.0.0'
-  s.summary          = 'description of GIFKeyboard.'
+  s.version          = '1.0.1'
+  s.summary          = 'display a GIFKeyboard'
   s.swift_version    = '4.1'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Allow user to have a GIFKeyboard
+Allow user to display a customizable GIFKeyboard and also allow him to display GIF in imageView
                        DESC
 
   s.homepage         = 'https://github.com/antoineThiel/GIFKeyboard'
