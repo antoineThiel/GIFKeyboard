@@ -8,8 +8,8 @@ public class GIFKeyboard{
         return GIFModal.newInstanceDefault(customView: view)
     }
 
-    public func getGIFModalCustom(view:UIView, searchBar:UITextField, collection:UICollectionView, layout:UICollectionViewFlowLayout) -> UIViewController {
-        return GIFModal.newInstanceCustom(customView: view, searchBar: searchBar, collectionView: collection, collectionViewLayout: layout)
+    public func getGIFModalCustom(view:UIView, searchBar:UITextField, collection:UICollectionView, layout:UICollectionViewFlowLayout, backgroundColor:UIColor) -> UIViewController {
+        return GIFModal.newInstanceCustom(customView: view, searchBar: searchBar, collectionView: collection, collectionViewLayout: layout, backgroundColor: backgroundColor)
     }
 
     public func displayGIFFromURL(viewToAppendTo:UIView, url:String) -> Void {

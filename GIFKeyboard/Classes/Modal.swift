@@ -18,14 +18,16 @@ class GIFModal: UIViewController, UITextFieldDelegate, UICollectionViewDelegate,
     var collectionView:UICollectionView!
     let reuseIdentifier:String = "Cell"
     var myCell:UICollectionViewCell!
+    var backgroundColor:UIColor!
     
-    class func newInstanceCustom(customView:UIView, searchBar:UITextField, collectionView:UICollectionView, collectionViewLayout:UICollectionViewFlowLayout) -> GIFModal
+    class func newInstanceCustom(customView:UIView, searchBar:UITextField, collectionView:UICollectionView, collectionViewLayout:UICollectionViewFlowLayout, backgroundColor:UIColor) -> GIFModal
     {
         let controller = GIFModal()
         controller.customView = customView
         controller.searchBar = searchBar
         controller.collectionView = collectionView
         controller.layout = collectionViewLayout
+        controller.backgroundColor = backgroundColor
         return controller
     }
     
@@ -37,6 +39,11 @@ class GIFModal: UIViewController, UITextFieldDelegate, UICollectionViewDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if self.backgroundColor == nil {
+            self.view.backgroundColor = UIColor.darkGray
+        }else{
+            self.view.backgroundColor = self.backgroundColor
+        }
         if self.searchBar == nil {
             self.getDefaultSearchBar()
         }
@@ -55,10 +62,30 @@ class GIFModal: UIViewController, UITextFieldDelegate, UICollectionViewDelegate,
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
-        
         self.view.addSubview(self.collectionView)
         
+        let button = UIButton(frame: CGRect(x: 330,
+                                            y: 20,
+                                            width: 40,
+                                            height: 40))
+        button.setTitle("X", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = .gray
+        button.addTarget(self,
+                         action: #selector(buttonAction),
+                         for: .touchUpInside)
+        
+        self.view.addSubview(button)
+        
     }
+    
+    
+    @objc
+    func buttonAction() {
+        self.dismiss(animated: true)
+    }
+    
+    
     
     func getDefaultLayout() -> Void {
         let screenWidth = view.frame.width

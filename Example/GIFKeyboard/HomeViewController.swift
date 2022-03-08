@@ -49,8 +49,10 @@ class HomeViewController: UIViewController {
         collectionView.setCollectionViewLayout(layout, animated: true)
         collectionView.backgroundColor = UIColor.blue
         
-        self.present(self.gifKeyboard.getGIFModalDefault(view: self.customView), animated: true, completion: nil)
-//        self.present(self.gifKeyboard.getGIFModalCustom(view: self.customView, searchBar: searchBar, collection: collectionView, layout: layout), animated: true, completion: nil)
+        let backgroundColor = UIColor.purple
+        
+        //self.present(self.gifKeyboard.getGIFModalDefault(view: self.customView), animated: true, completion: nil)
+        self.present(self.gifKeyboard.getGIFModalCustom(view: self.customView, searchBar: searchBar, collection: collectionView, layout: layout, backgroundColor: backgroundColor), animated: true, completion: nil)
     }
     
 }
